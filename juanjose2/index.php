@@ -51,6 +51,59 @@ and open the template in the editor.
                 ?>
             </h2>
         </p>
+        <h2>
+        
+        <?php
+         //Arreglos
+        //$Arreglo =[2,'hola',5];
+                //echo $Arreglo[0];
+        $Arreglo = array (2,'hola',5);
+        print_r($Arreglo);
+               // echo $Arreglo [1]. "<br>" .$Arreglo[0];
+        
+        ?>
+        </h2>
+        
+        <pre>
+            <h3>
+                <?php
+                    //print_r($Arreglo);
+                    //var_dump($Arreglo);
+                    //echo "<br>";
+                    //
+                    //$Arreglo[] = "python";
+                    //var_dump($Arreglo);
+                    //
+                //$dato = array_pop($Arreglo);
+                //print_r($Arreglo)
+                
+                //ARREGLOS ASOCIADOS
+                $Usuario = array ('Nombre' => 'Juan','Apellido' => 'Moreno','Cedula' => 1000538054);
+                echo "<h1>".$Usuario [Nombre].'</h1>';
+                echo '<br>';
+                $Existe  = in_array("hola",$Arreglo);
+                echo $Existe ;
+                
+                foreach ($Usuario as $user)
+                    {
+                    echo $user . "<br>";
+                }
+                    
+                ?>
+                <ul>
+                    <?php
+                        foreach ($Usuario as $key => $user)
+                    {
+                    echo "<li>".$key . $user . "</li>";
+                    }
+                    
+                    for($i=0; $i < 4; $i++){
+                        echo $i;
+                    }
+                    ?>
+                </ul>
+            </h3>
+        </pre>
      
     </body>
 </html>
