@@ -43,6 +43,7 @@ and open the template in the editor.
             $agenda[]=$tel;
         }
         agendar ('Felipe',5774786);
+       //Para Agregar
         $agenda[]="Carolina";
         print_r ($agenda)
         ?>
